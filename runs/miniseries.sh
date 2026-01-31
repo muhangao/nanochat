@@ -30,7 +30,7 @@ SERIES_NAME="${1:-${SERIES_NAME:-$(date +%b%d | tr '[:upper:]' '[:lower:]')}}"
 # Depths to train (the "miniseries")
 DEPTHS=(10 11 12 13 14 15 16 17 18 19 20)
 # Hardware
-NPROC_PER_NODE="${NPROC_PER_NODE:-8}"
+NPROC_PER_NODE="${NPROC_PER_NODE:-1}"
 # Logging
 WANDB_RUN="${WANDB_RUN:-${SERIES_NAME}_miniseries}"
 
