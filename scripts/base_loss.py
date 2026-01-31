@@ -4,7 +4,7 @@ Loads a checkpoint, and:
 - Samples from the model
 
 Example run as:
-torchrun --standalone --nproc_per_node=8 -m scripts.base_loss
+torchrun --standalone --nproc_per_node=1 -m scripts.base_loss
 
 To evaluate a HuggingFace model:
 python -m scripts.base_loss --hf-path openai-community/gpt2

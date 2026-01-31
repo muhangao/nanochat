@@ -6,7 +6,7 @@ python -m scripts.chat_sft
 
 Or torchrun for training:
 
-torchrun --standalone --nproc_per_node=8 -m scripts.chat_sft
+torchrun --standalone --nproc_per_node=1 -m scripts.chat_sft
 """
 
 import argparse

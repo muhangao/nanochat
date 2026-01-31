@@ -6,7 +6,7 @@ python -m scripts.mid_train
 
 Or torchrun for training:
 
-torchrun --standalone --nproc_per_node=8 -m scripts.mid_train -- --device-batch-size=16
+torchrun --standalone --nproc_per_node=1 -m scripts.mid_train -- --device-batch-size=16
 """
 
 import argparse

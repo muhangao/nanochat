@@ -5,7 +5,7 @@ Run on a single GPU:
 python -m scripts.base_eval
 
 Run with torchrun on e.g. 8 GPUs:
-torchrun --nproc_per_node=8 -m scripts.base_eval
+torchrun --nproc_per_node=1 -m scripts.base_eval
 
 The script will print the CORE metric to the console.
 """
